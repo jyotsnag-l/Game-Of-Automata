@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game of Automata</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0"
+  }
+}
+</script>
+<style>
+  :root {
+    --bg-deep-navy: #0D1B2A;
+    --bg-navy: #1B263B;
+    --ui-stroke: #415A77;
+    --text-muted: #778DA9;
+    --text-primary: #E0E1DD;
+    --accent-amber: #FFC300;
+    --accent-teal: #40916C;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+  }
+
+  body {
+    background-color: var(--bg-deep-navy);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    background-image:
+      linear-gradient(var(--ui-stroke) 1px, transparent 1px),
+      linear-gradient(to right, var(--ui-stroke) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: -1px -1px;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.08);
+    }
+  }
+  .animate-pulse-once {
+    animation: pulse 0.5s ease-in-out;
+  }
+
+  @keyframes fadeInSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-fade-slide-up {
+    animation: fadeInSlideUp 0.5s ease-out forwards;
+  }
+
+  @keyframes blueprint-spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+</style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root" class="bg-black/20"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
