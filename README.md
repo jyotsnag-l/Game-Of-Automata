@@ -54,5 +54,4 @@ In each level, you are presented with a **Finite Automaton** that is *almost* co
 3.  **Open the app:**
     Navigate to `http://localhost:3000` in your browser.
 
-## 📝 License
-This project is open-source and available for educational purposes. Happy debugging!
+
