@@ -45,6 +45,7 @@ In each level, you are presented with a **Finite Automaton** that is *almost* co
     ```bash
     npm install
     ```
+    once thats done
 
 2.  **Run the development server:**
     ```bash
