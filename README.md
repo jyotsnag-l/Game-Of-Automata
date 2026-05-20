@@ -29,7 +29,7 @@ In each level, you are presented with a **Finite Automaton** that is *almost* co
 
 *   **Frontend:** React 19 + TypeScript
 *   **Styling:** Tailwind CSS
-*   **AI Engine:** Google Gemini API (`@google/genai`)
+*   **AI Engine:** Google Gemini API 
 *   **Build Tool:** Vite
 *   **Icons:** Lucide React
 
